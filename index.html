@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Dashboard App Inatel</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Arimo:wght@400;600;700&family=Material+Symbols+Outlined" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <nav id="menu_aba" aria-label="Escolher tema" hidden>
+    <button class="tema-opcao" data-tema="inatel">Tema Inatel</button>
+    <button class="tema-opcao" data-tema="limao">Tema Limão</button>
+    <button class="tema-opcao" data-tema="dark">Tema Dark</button>
+    <button id="fecharMenu" class="tema-opcao">Fechar menu</button>
+  </nav>
+  <header>
+    <button id="abrirMenu" class="icon-button" aria-label="Abrir menu"><span class="material-symbols-outlined">menu</span></button>
+    <div class="logo" aria-label="Inatel">Inatel</div>
+    <span class="material-symbols-outlined profile-icon" aria-label="Perfil">person</span>
+  </header>
+  <main>
+    <section id="mensagens" class="painel">
+      <h1>Olá Raphael!</h1>
+      <div class="mns_box"><span class="material-symbols-outlined">notifications_active</span><p>Você possui um armário reservado com entrega para hoje...</p></div>
+      <div class="mns_box"><span class="material-symbols-outlined">mail</span><p>Você possui uma pendência no financeiro...</p></div>
+    </section>
+    <aulas-component id="componente"></aulas-component>
+    <section class="carousel-container painel" aria-label="Eventos do campus">
+      <div class="carousel"></div>
+      <button id="prevBtn" class="carousel-button" aria-label="Evento anterior">❮</button>
+      <button id="nextBtn" class="carousel-button" aria-label="Próximo evento">❯</button>
+    </section>
+    <section class="container painel" aria-labelledby="titulo-reserva">
+      <h2 id="titulo-reserva">Reserva de Armário</h2>
+      <p>Selecione o tipo de armário:</p>
+      <div class="tipo-container">
+        <button class="tipo" data-value="padrao">Padrão</button>
+        <button class="tipo" data-value="duplo">Duplo</button>
+        <button id="reservarBtn" class="tipo_res">Reservar</button>
+      </div>
+      <div id="armarioNumero" aria-live="polite"></div>
+      <p id="resultado" aria-live="polite"></p>
+    </section>
+  </main>
+  <script src="script.js"></script>
+  <script src="script_componente.js"></script>
+</body>
+</html>

@@ -1,0 +1,15 @@
+:host { display:block; font-family:Arimo,Arial,sans-serif; color:var(--cor-text,#182438); }
+.comp-aula { background:var(--cor-painel,#fff); border-radius:10px; margin-bottom:20px; padding:18px; box-shadow:0 4px 8px #00000016; }
+.titulo_aula { font-size:15px; font-weight:bold; padding:0 5px; margin-bottom:8px; }
+p { font-size:12px; line-height:1.5; padding:0 5px; }
+.lables { display:flex; gap:10px; flex-wrap:wrap; }
+.lable-prova,.lable-frequencia,.lable-nota { padding:8px 14px; border-radius:500px; text-align:center; }
+.lable-prova { background:var(--prova,#126ae2); margin-bottom:12px; }
+.lable-frequencia { background:var(--frequencia,#126ae2); }
+.lable-nota { background:var(--nota,#126ae2); }
+/* Regra solicitada no enunciado */
+.lable-nota-vermelho { background:#dc3545; }
+.lable-nota-laranja { background:#ed8500; }
+.lable-nota-verde { background:#198754; }
+.p_lable { font-size:12px; font-weight:700; color:white; }
+.mensagem-erro { background:var(--cor-painel,#fff); padding:20px; border-radius:10px; }
